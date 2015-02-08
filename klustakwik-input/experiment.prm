@@ -1,0 +1,7 @@
+experiment_name = 'experiment'
+raw_data_files = experiment_name + '.dat'
+prb_file = experiment_name + '.prb'
+nbits = 16
+# voltage_gain = ?
+sample_rate = 40000
+nchannels = 16
