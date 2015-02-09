@@ -73,8 +73,8 @@ Homepage: http://neuralensemble.org/OpenElectrophy
 * Based on the Neo library
 * Has graphs in time and frequency domain
 * Targets to storing electrophysiogical data in the database, managing collections of data
-
-Not very useful as a tool for continious usage.
+* Have spike sorting functionality
+* Has a number of minor quality issues
 
 ### Klusters, NeuroScope and NDManager
 
@@ -93,8 +93,8 @@ Publication: [High-dimensional cluster analysis with the Masked EM Algorithm](ht
 Homepage: http://klusta-team.github.io
 
 * Tools for spike detection, automatic batch clustering and refining clusters manually.
-
-Looks very good, but tailored to a specific data format and workflow.
+* Accepts it's own KWIK file format (based in HDF5) as well as raw recordings.
+* Has a lot of configuration parameters for the detection and clustering algorithms.
 
 ## Spike sorting libraries and frameworks
 
