@@ -73,7 +73,7 @@ Homepage: http://neuralensemble.org/OpenElectrophy
 * Based on the Neo library
 * Has graphs in time and frequency domain
 * Targets to storing electrophysiogical data in the database, managing collections of data
-* Have spike sorting functionality
+* Has spike sorting functionality
 * Has a number of minor quality issues
 
 ### Klusters, NeuroScope and NDManager
