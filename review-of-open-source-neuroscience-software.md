@@ -25,6 +25,7 @@ Homepage: http://neuralensemble.org/neo
 * For the neuroscience problem domain, the model is both simple, accurate and non-restrictive
 * Documentation quality is good
 * Performance is expected to be sufficient, due to NumPy with ATLAS/LINPACK
+* [**Backwards-incompatible API changes in the upcoming version 0.4**](https://github.com/NeuralEnsemble/python-neo/wiki/0.4.0_tasks)
 
 It is promising to design and implement a data analysis framework on the top of Neo for [common spike sorting pipeline](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3314330/figure/F1/).
 This framework can be used to experiment with different algorithms for different pipeline stages.
