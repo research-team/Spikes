@@ -5,4 +5,5 @@ Joint project with neuroscience lab to process EEG data, to run filtering, clust
 * [Project description](Spikes.md)
 * [Spike sorting methods papers](spike-sorting-methods-papers.md)
 * [Review of open-source neuroscience software](review-of-open-source-neuroscience-software.md)
-* [Software installation and usage](klustakwik-installation-and-usage.md)
+* [Software installation](software-installation.md)
+* [Software usage](software-usage.md)
