@@ -1,6 +1,6 @@
-# KlustaKwik Installation and Usage
+# Software Installation
 
-## Installation
+## Klusta Suite Installation
 
 1. https://github.com/klusta-team/example/blob/master/install.md#all-systems-linux-mac-os-x-and-windows
 2. https://github.com/klusta-team/example/blob/master/README.md#linux-and-mac-os-x (steps 2 and 3)
