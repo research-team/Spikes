@@ -1,0 +1,1721 @@
+#Cheetah system setup file
+#Generated using Cheetah v5.6.3
+#File Generation Date: 2014-08-29 10:08:06
+
+#Cheetah Setup
+-SetDataDirectory "D:\CheetahData\BarrelClustering\06252014 P6\"
+
+
+#Log File setup
+-SetLogFile "\"
+
+
+#Hardware Subsystem Creation and Setup for:  AcqSystem1
+-CreateHardwareSubSystem "AcqSystem1" DigitalLynxSX "40000" "192.168.3.10" "26011" "192.168.3.100" "26090"
+-SetDmaBuffers "AcqSystem1" 64 2
+-SetDialogPosition "Hardware" 0 42
+-SetDialogVisible "Hardware" False
+
+
+
+
+#Acquisition Entity creation and setup for: Events
+-SetDataFile Events "Events.nev"
+-SetNetComDataBufferingEnabled Events False
+-SetNetComDataBufferSize Events 3000
+
+
+#Acquisition Entity creation and setup for: "SE1"
+-CreateSpikeAcqEnt "SE1" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE1" True
+-SetChannelNumber "SE1" 1
+-SetAcqEntReference "SE1" 36000001
+-SetInputRange "SE1" 500
+-SetSubSamplingInterleave "SE1" 1
+-SetDspLowCutFilterEnabled "SE1" True
+-SetDspLowCutFrequency "SE1" 600
+-SetDspLowCutNumberTaps "SE1" 64
+-SetDspHighCutFilterEnabled "SE1" True
+-SetDspHighCutFrequency "SE1" 6000
+-SetDspHighCutNumberTaps "SE1" 32
+-SetInputInverted "SE1" False
+-SetDiskWriteEnabled "SE1" True
+-SetNetComDataBufferingEnabled "SE1" True
+-SetNetComDataBufferSize "SE1" 3000
+-SetSpikeThreshold "SE1" 250
+-SetSpikeDetectionType "SE1" Threshold
+-SetSpikeSlope "SE1" 0 100 160
+-SetSpikeDualThresholding "SE1" False
+-SetSpikeRetriggerTime "SE1" 750
+-SetSpikeAlignmentPoint "SE1" 8
+-SetSubChannelEnabled "SE1" 0 True
+-SetWaveformFeature "SE1" Peak 0 0
+-SetWaveformFeature "SE1" Valley 1 0
+-SetWaveformFeature "SE1" Energy 2 0
+-SetWaveformFeature "SE1" Height 3 0
+-SetWaveformFeature "SE1" NthSample 4 0 4
+-SetWaveformFeature "SE1" NthSample 5 0 16
+-SetWaveformFeature "SE1" NthSample 6 0 24
+-SetWaveformFeature "SE1" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE2"
+-CreateSpikeAcqEnt "SE2" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE2" True
+-SetChannelNumber "SE2" 2
+-SetAcqEntReference "SE2" 36000001
+-SetInputRange "SE2" 500
+-SetSubSamplingInterleave "SE2" 1
+-SetDspLowCutFilterEnabled "SE2" True
+-SetDspLowCutFrequency "SE2" 600
+-SetDspLowCutNumberTaps "SE2" 64
+-SetDspHighCutFilterEnabled "SE2" True
+-SetDspHighCutFrequency "SE2" 6000
+-SetDspHighCutNumberTaps "SE2" 32
+-SetInputInverted "SE2" False
+-SetDiskWriteEnabled "SE2" True
+-SetNetComDataBufferingEnabled "SE2" True
+-SetNetComDataBufferSize "SE2" 3000
+-SetSpikeThreshold "SE2" 250
+-SetSpikeDetectionType "SE2" Threshold
+-SetSpikeSlope "SE2" 0 100 160
+-SetSpikeDualThresholding "SE2" False
+-SetSpikeRetriggerTime "SE2" 750
+-SetSpikeAlignmentPoint "SE2" 8
+-SetSubChannelEnabled "SE2" 0 True
+-SetWaveformFeature "SE2" Peak 0 0
+-SetWaveformFeature "SE2" Valley 1 0
+-SetWaveformFeature "SE2" Energy 2 0
+-SetWaveformFeature "SE2" Height 3 0
+-SetWaveformFeature "SE2" NthSample 4 0 4
+-SetWaveformFeature "SE2" NthSample 5 0 16
+-SetWaveformFeature "SE2" NthSample 6 0 24
+-SetWaveformFeature "SE2" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE3"
+-CreateSpikeAcqEnt "SE3" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE3" True
+-SetChannelNumber "SE3" 6
+-SetAcqEntReference "SE3" 36000001
+-SetInputRange "SE3" 500
+-SetSubSamplingInterleave "SE3" 1
+-SetDspLowCutFilterEnabled "SE3" True
+-SetDspLowCutFrequency "SE3" 600
+-SetDspLowCutNumberTaps "SE3" 64
+-SetDspHighCutFilterEnabled "SE3" True
+-SetDspHighCutFrequency "SE3" 6000
+-SetDspHighCutNumberTaps "SE3" 32
+-SetInputInverted "SE3" False
+-SetDiskWriteEnabled "SE3" True
+-SetNetComDataBufferingEnabled "SE3" True
+-SetNetComDataBufferSize "SE3" 3000
+-SetSpikeThreshold "SE3" 250
+-SetSpikeDetectionType "SE3" Threshold
+-SetSpikeSlope "SE3" 0 100 160
+-SetSpikeDualThresholding "SE3" False
+-SetSpikeRetriggerTime "SE3" 750
+-SetSpikeAlignmentPoint "SE3" 8
+-SetSubChannelEnabled "SE3" 0 True
+-SetWaveformFeature "SE3" Peak 0 0
+-SetWaveformFeature "SE3" Valley 1 0
+-SetWaveformFeature "SE3" Energy 2 0
+-SetWaveformFeature "SE3" Height 3 0
+-SetWaveformFeature "SE3" NthSample 4 0 4
+-SetWaveformFeature "SE3" NthSample 5 0 16
+-SetWaveformFeature "SE3" NthSample 6 0 24
+-SetWaveformFeature "SE3" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE4"
+-CreateSpikeAcqEnt "SE4" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE4" True
+-SetChannelNumber "SE4" 4
+-SetAcqEntReference "SE4" 36000001
+-SetInputRange "SE4" 500
+-SetSubSamplingInterleave "SE4" 1
+-SetDspLowCutFilterEnabled "SE4" True
+-SetDspLowCutFrequency "SE4" 600
+-SetDspLowCutNumberTaps "SE4" 64
+-SetDspHighCutFilterEnabled "SE4" True
+-SetDspHighCutFrequency "SE4" 6000
+-SetDspHighCutNumberTaps "SE4" 32
+-SetInputInverted "SE4" False
+-SetDiskWriteEnabled "SE4" True
+-SetNetComDataBufferingEnabled "SE4" True
+-SetNetComDataBufferSize "SE4" 3000
+-SetSpikeThreshold "SE4" 250
+-SetSpikeDetectionType "SE4" Threshold
+-SetSpikeSlope "SE4" 0 100 160
+-SetSpikeDualThresholding "SE4" False
+-SetSpikeRetriggerTime "SE4" 750
+-SetSpikeAlignmentPoint "SE4" 8
+-SetSubChannelEnabled "SE4" 0 True
+-SetWaveformFeature "SE4" Peak 0 0
+-SetWaveformFeature "SE4" Valley 1 0
+-SetWaveformFeature "SE4" Energy 2 0
+-SetWaveformFeature "SE4" Height 3 0
+-SetWaveformFeature "SE4" NthSample 4 0 4
+-SetWaveformFeature "SE4" NthSample 5 0 16
+-SetWaveformFeature "SE4" NthSample 6 0 24
+-SetWaveformFeature "SE4" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE5"
+-CreateSpikeAcqEnt "SE5" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE5" True
+-SetChannelNumber "SE5" 0
+-SetAcqEntReference "SE5" 36000001
+-SetInputRange "SE5" 500
+-SetSubSamplingInterleave "SE5" 1
+-SetDspLowCutFilterEnabled "SE5" True
+-SetDspLowCutFrequency "SE5" 600
+-SetDspLowCutNumberTaps "SE5" 64
+-SetDspHighCutFilterEnabled "SE5" True
+-SetDspHighCutFrequency "SE5" 6000
+-SetDspHighCutNumberTaps "SE5" 32
+-SetInputInverted "SE5" False
+-SetDiskWriteEnabled "SE5" True
+-SetNetComDataBufferingEnabled "SE5" True
+-SetNetComDataBufferSize "SE5" 3000
+-SetSpikeThreshold "SE5" 250
+-SetSpikeDetectionType "SE5" Threshold
+-SetSpikeSlope "SE5" 0 100 160
+-SetSpikeDualThresholding "SE5" False
+-SetSpikeRetriggerTime "SE5" 750
+-SetSpikeAlignmentPoint "SE5" 8
+-SetSubChannelEnabled "SE5" 0 True
+-SetWaveformFeature "SE5" Peak 0 0
+-SetWaveformFeature "SE5" Valley 1 0
+-SetWaveformFeature "SE5" Energy 2 0
+-SetWaveformFeature "SE5" Height 3 0
+-SetWaveformFeature "SE5" NthSample 4 0 4
+-SetWaveformFeature "SE5" NthSample 5 0 16
+-SetWaveformFeature "SE5" NthSample 6 0 24
+-SetWaveformFeature "SE5" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE6"
+-CreateSpikeAcqEnt "SE6" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE6" True
+-SetChannelNumber "SE6" 5
+-SetAcqEntReference "SE6" 36000001
+-SetInputRange "SE6" 500
+-SetSubSamplingInterleave "SE6" 1
+-SetDspLowCutFilterEnabled "SE6" True
+-SetDspLowCutFrequency "SE6" 600
+-SetDspLowCutNumberTaps "SE6" 64
+-SetDspHighCutFilterEnabled "SE6" True
+-SetDspHighCutFrequency "SE6" 6000
+-SetDspHighCutNumberTaps "SE6" 32
+-SetInputInverted "SE6" False
+-SetDiskWriteEnabled "SE6" True
+-SetNetComDataBufferingEnabled "SE6" True
+-SetNetComDataBufferSize "SE6" 3000
+-SetSpikeThreshold "SE6" 250
+-SetSpikeDetectionType "SE6" Threshold
+-SetSpikeSlope "SE6" 0 100 160
+-SetSpikeDualThresholding "SE6" False
+-SetSpikeRetriggerTime "SE6" 750
+-SetSpikeAlignmentPoint "SE6" 8
+-SetSubChannelEnabled "SE6" 0 True
+-SetWaveformFeature "SE6" Peak 0 0
+-SetWaveformFeature "SE6" Valley 1 0
+-SetWaveformFeature "SE6" Energy 2 0
+-SetWaveformFeature "SE6" Height 3 0
+-SetWaveformFeature "SE6" NthSample 4 0 4
+-SetWaveformFeature "SE6" NthSample 5 0 16
+-SetWaveformFeature "SE6" NthSample 6 0 24
+-SetWaveformFeature "SE6" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE7"
+-CreateSpikeAcqEnt "SE7" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE7" True
+-SetChannelNumber "SE7" 7
+-SetAcqEntReference "SE7" 36000001
+-SetInputRange "SE7" 500
+-SetSubSamplingInterleave "SE7" 1
+-SetDspLowCutFilterEnabled "SE7" True
+-SetDspLowCutFrequency "SE7" 600
+-SetDspLowCutNumberTaps "SE7" 64
+-SetDspHighCutFilterEnabled "SE7" True
+-SetDspHighCutFrequency "SE7" 6000
+-SetDspHighCutNumberTaps "SE7" 32
+-SetInputInverted "SE7" False
+-SetDiskWriteEnabled "SE7" True
+-SetNetComDataBufferingEnabled "SE7" True
+-SetNetComDataBufferSize "SE7" 3000
+-SetSpikeThreshold "SE7" 250
+-SetSpikeDetectionType "SE7" Threshold
+-SetSpikeSlope "SE7" 0 100 160
+-SetSpikeDualThresholding "SE7" False
+-SetSpikeRetriggerTime "SE7" 750
+-SetSpikeAlignmentPoint "SE7" 8
+-SetSubChannelEnabled "SE7" 0 True
+-SetWaveformFeature "SE7" Peak 0 0
+-SetWaveformFeature "SE7" Valley 1 0
+-SetWaveformFeature "SE7" Energy 2 0
+-SetWaveformFeature "SE7" Height 3 0
+-SetWaveformFeature "SE7" NthSample 4 0 4
+-SetWaveformFeature "SE7" NthSample 5 0 16
+-SetWaveformFeature "SE7" NthSample 6 0 24
+-SetWaveformFeature "SE7" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE8"
+-CreateSpikeAcqEnt "SE8" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE8" True
+-SetChannelNumber "SE8" 3
+-SetAcqEntReference "SE8" 36000001
+-SetInputRange "SE8" 500
+-SetSubSamplingInterleave "SE8" 1
+-SetDspLowCutFilterEnabled "SE8" True
+-SetDspLowCutFrequency "SE8" 600
+-SetDspLowCutNumberTaps "SE8" 64
+-SetDspHighCutFilterEnabled "SE8" True
+-SetDspHighCutFrequency "SE8" 6000
+-SetDspHighCutNumberTaps "SE8" 32
+-SetInputInverted "SE8" False
+-SetDiskWriteEnabled "SE8" True
+-SetNetComDataBufferingEnabled "SE8" True
+-SetNetComDataBufferSize "SE8" 3000
+-SetSpikeThreshold "SE8" 250
+-SetSpikeDetectionType "SE8" Threshold
+-SetSpikeSlope "SE8" 0 100 160
+-SetSpikeDualThresholding "SE8" False
+-SetSpikeRetriggerTime "SE8" 750
+-SetSpikeAlignmentPoint "SE8" 8
+-SetSubChannelEnabled "SE8" 0 True
+-SetWaveformFeature "SE8" Peak 0 0
+-SetWaveformFeature "SE8" Valley 1 0
+-SetWaveformFeature "SE8" Energy 2 0
+-SetWaveformFeature "SE8" Height 3 0
+-SetWaveformFeature "SE8" NthSample 4 0 4
+-SetWaveformFeature "SE8" NthSample 5 0 16
+-SetWaveformFeature "SE8" NthSample 6 0 24
+-SetWaveformFeature "SE8" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE9"
+-CreateSpikeAcqEnt "SE9" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE9" True
+-SetChannelNumber "SE9" 11
+-SetAcqEntReference "SE9" 36000001
+-SetInputRange "SE9" 500
+-SetSubSamplingInterleave "SE9" 1
+-SetDspLowCutFilterEnabled "SE9" True
+-SetDspLowCutFrequency "SE9" 600
+-SetDspLowCutNumberTaps "SE9" 64
+-SetDspHighCutFilterEnabled "SE9" True
+-SetDspHighCutFrequency "SE9" 6000
+-SetDspHighCutNumberTaps "SE9" 32
+-SetInputInverted "SE9" False
+-SetDiskWriteEnabled "SE9" True
+-SetNetComDataBufferingEnabled "SE9" True
+-SetNetComDataBufferSize "SE9" 3000
+-SetSpikeThreshold "SE9" 250
+-SetSpikeDetectionType "SE9" Threshold
+-SetSpikeSlope "SE9" 0 100 160
+-SetSpikeDualThresholding "SE9" False
+-SetSpikeRetriggerTime "SE9" 750
+-SetSpikeAlignmentPoint "SE9" 8
+-SetSubChannelEnabled "SE9" 0 True
+-SetWaveformFeature "SE9" Peak 0 0
+-SetWaveformFeature "SE9" Valley 1 0
+-SetWaveformFeature "SE9" Energy 2 0
+-SetWaveformFeature "SE9" Height 3 0
+-SetWaveformFeature "SE9" NthSample 4 0 4
+-SetWaveformFeature "SE9" NthSample 5 0 16
+-SetWaveformFeature "SE9" NthSample 6 0 24
+-SetWaveformFeature "SE9" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE10"
+-CreateSpikeAcqEnt "SE10" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE10" True
+-SetChannelNumber "SE10" 9
+-SetAcqEntReference "SE10" 36000001
+-SetInputRange "SE10" 500
+-SetSubSamplingInterleave "SE10" 1
+-SetDspLowCutFilterEnabled "SE10" True
+-SetDspLowCutFrequency "SE10" 600
+-SetDspLowCutNumberTaps "SE10" 64
+-SetDspHighCutFilterEnabled "SE10" True
+-SetDspHighCutFrequency "SE10" 6000
+-SetDspHighCutNumberTaps "SE10" 32
+-SetInputInverted "SE10" False
+-SetDiskWriteEnabled "SE10" True
+-SetNetComDataBufferingEnabled "SE10" True
+-SetNetComDataBufferSize "SE10" 3000
+-SetSpikeThreshold "SE10" 250
+-SetSpikeDetectionType "SE10" Threshold
+-SetSpikeSlope "SE10" 0 100 160
+-SetSpikeDualThresholding "SE10" False
+-SetSpikeRetriggerTime "SE10" 750
+-SetSpikeAlignmentPoint "SE10" 8
+-SetSubChannelEnabled "SE10" 0 True
+-SetWaveformFeature "SE10" Peak 0 0
+-SetWaveformFeature "SE10" Valley 1 0
+-SetWaveformFeature "SE10" Energy 2 0
+-SetWaveformFeature "SE10" Height 3 0
+-SetWaveformFeature "SE10" NthSample 4 0 4
+-SetWaveformFeature "SE10" NthSample 5 0 16
+-SetWaveformFeature "SE10" NthSample 6 0 24
+-SetWaveformFeature "SE10" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE11"
+-CreateSpikeAcqEnt "SE11" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE11" True
+-SetChannelNumber "SE11" 13
+-SetAcqEntReference "SE11" 36000001
+-SetInputRange "SE11" 500
+-SetSubSamplingInterleave "SE11" 1
+-SetDspLowCutFilterEnabled "SE11" True
+-SetDspLowCutFrequency "SE11" 600
+-SetDspLowCutNumberTaps "SE11" 64
+-SetDspHighCutFilterEnabled "SE11" True
+-SetDspHighCutFrequency "SE11" 6000
+-SetDspHighCutNumberTaps "SE11" 32
+-SetInputInverted "SE11" False
+-SetDiskWriteEnabled "SE11" True
+-SetNetComDataBufferingEnabled "SE11" True
+-SetNetComDataBufferSize "SE11" 3000
+-SetSpikeThreshold "SE11" 250
+-SetSpikeDetectionType "SE11" Threshold
+-SetSpikeSlope "SE11" 0 100 160
+-SetSpikeDualThresholding "SE11" False
+-SetSpikeRetriggerTime "SE11" 750
+-SetSpikeAlignmentPoint "SE11" 8
+-SetSubChannelEnabled "SE11" 0 True
+-SetWaveformFeature "SE11" Peak 0 0
+-SetWaveformFeature "SE11" Valley 1 0
+-SetWaveformFeature "SE11" Energy 2 0
+-SetWaveformFeature "SE11" Height 3 0
+-SetWaveformFeature "SE11" NthSample 4 0 4
+-SetWaveformFeature "SE11" NthSample 5 0 16
+-SetWaveformFeature "SE11" NthSample 6 0 24
+-SetWaveformFeature "SE11" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE12"
+-CreateSpikeAcqEnt "SE12" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE12" True
+-SetChannelNumber "SE12" 14
+-SetAcqEntReference "SE12" 36000001
+-SetInputRange "SE12" 500
+-SetSubSamplingInterleave "SE12" 1
+-SetDspLowCutFilterEnabled "SE12" True
+-SetDspLowCutFrequency "SE12" 600
+-SetDspLowCutNumberTaps "SE12" 64
+-SetDspHighCutFilterEnabled "SE12" True
+-SetDspHighCutFrequency "SE12" 6000
+-SetDspHighCutNumberTaps "SE12" 32
+-SetInputInverted "SE12" False
+-SetDiskWriteEnabled "SE12" True
+-SetNetComDataBufferingEnabled "SE12" True
+-SetNetComDataBufferSize "SE12" 3000
+-SetSpikeThreshold "SE12" 250
+-SetSpikeDetectionType "SE12" Threshold
+-SetSpikeSlope "SE12" 0 100 160
+-SetSpikeDualThresholding "SE12" False
+-SetSpikeRetriggerTime "SE12" 750
+-SetSpikeAlignmentPoint "SE12" 8
+-SetSubChannelEnabled "SE12" 0 True
+-SetWaveformFeature "SE12" Peak 0 0
+-SetWaveformFeature "SE12" Valley 1 0
+-SetWaveformFeature "SE12" Energy 2 0
+-SetWaveformFeature "SE12" Height 3 0
+-SetWaveformFeature "SE12" NthSample 4 0 4
+-SetWaveformFeature "SE12" NthSample 5 0 16
+-SetWaveformFeature "SE12" NthSample 6 0 24
+-SetWaveformFeature "SE12" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE13"
+-CreateSpikeAcqEnt "SE13" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE13" True
+-SetChannelNumber "SE13" 12
+-SetAcqEntReference "SE13" 36000001
+-SetInputRange "SE13" 500
+-SetSubSamplingInterleave "SE13" 1
+-SetDspLowCutFilterEnabled "SE13" True
+-SetDspLowCutFrequency "SE13" 600
+-SetDspLowCutNumberTaps "SE13" 64
+-SetDspHighCutFilterEnabled "SE13" True
+-SetDspHighCutFrequency "SE13" 6000
+-SetDspHighCutNumberTaps "SE13" 32
+-SetInputInverted "SE13" False
+-SetDiskWriteEnabled "SE13" True
+-SetNetComDataBufferingEnabled "SE13" True
+-SetNetComDataBufferSize "SE13" 3000
+-SetSpikeThreshold "SE13" 250
+-SetSpikeDetectionType "SE13" Threshold
+-SetSpikeSlope "SE13" 0 100 160
+-SetSpikeDualThresholding "SE13" False
+-SetSpikeRetriggerTime "SE13" 750
+-SetSpikeAlignmentPoint "SE13" 8
+-SetSubChannelEnabled "SE13" 0 True
+-SetWaveformFeature "SE13" Peak 0 0
+-SetWaveformFeature "SE13" Valley 1 0
+-SetWaveformFeature "SE13" Energy 2 0
+-SetWaveformFeature "SE13" Height 3 0
+-SetWaveformFeature "SE13" NthSample 4 0 4
+-SetWaveformFeature "SE13" NthSample 5 0 16
+-SetWaveformFeature "SE13" NthSample 6 0 24
+-SetWaveformFeature "SE13" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE14"
+-CreateSpikeAcqEnt "SE14" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE14" True
+-SetChannelNumber "SE14" 8
+-SetAcqEntReference "SE14" 36000001
+-SetInputRange "SE14" 500
+-SetSubSamplingInterleave "SE14" 1
+-SetDspLowCutFilterEnabled "SE14" True
+-SetDspLowCutFrequency "SE14" 600
+-SetDspLowCutNumberTaps "SE14" 64
+-SetDspHighCutFilterEnabled "SE14" True
+-SetDspHighCutFrequency "SE14" 6000
+-SetDspHighCutNumberTaps "SE14" 32
+-SetInputInverted "SE14" False
+-SetDiskWriteEnabled "SE14" True
+-SetNetComDataBufferingEnabled "SE14" True
+-SetNetComDataBufferSize "SE14" 3000
+-SetSpikeThreshold "SE14" 250
+-SetSpikeDetectionType "SE14" Threshold
+-SetSpikeSlope "SE14" 0 100 160
+-SetSpikeDualThresholding "SE14" False
+-SetSpikeRetriggerTime "SE14" 750
+-SetSpikeAlignmentPoint "SE14" 8
+-SetSubChannelEnabled "SE14" 0 True
+-SetWaveformFeature "SE14" Peak 0 0
+-SetWaveformFeature "SE14" Valley 1 0
+-SetWaveformFeature "SE14" Energy 2 0
+-SetWaveformFeature "SE14" Height 3 0
+-SetWaveformFeature "SE14" NthSample 4 0 4
+-SetWaveformFeature "SE14" NthSample 5 0 16
+-SetWaveformFeature "SE14" NthSample 6 0 24
+-SetWaveformFeature "SE14" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE15"
+-CreateSpikeAcqEnt "SE15" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE15" True
+-SetChannelNumber "SE15" 10
+-SetAcqEntReference "SE15" 36000001
+-SetInputRange "SE15" 500
+-SetSubSamplingInterleave "SE15" 1
+-SetDspLowCutFilterEnabled "SE15" True
+-SetDspLowCutFrequency "SE15" 600
+-SetDspLowCutNumberTaps "SE15" 64
+-SetDspHighCutFilterEnabled "SE15" True
+-SetDspHighCutFrequency "SE15" 6000
+-SetDspHighCutNumberTaps "SE15" 32
+-SetInputInverted "SE15" False
+-SetDiskWriteEnabled "SE15" True
+-SetNetComDataBufferingEnabled "SE15" True
+-SetNetComDataBufferSize "SE15" 3000
+-SetSpikeThreshold "SE15" 250
+-SetSpikeDetectionType "SE15" Threshold
+-SetSpikeSlope "SE15" 0 100 160
+-SetSpikeDualThresholding "SE15" False
+-SetSpikeRetriggerTime "SE15" 750
+-SetSpikeAlignmentPoint "SE15" 8
+-SetSubChannelEnabled "SE15" 0 True
+-SetWaveformFeature "SE15" Peak 0 0
+-SetWaveformFeature "SE15" Valley 1 0
+-SetWaveformFeature "SE15" Energy 2 0
+-SetWaveformFeature "SE15" Height 3 0
+-SetWaveformFeature "SE15" NthSample 4 0 4
+-SetWaveformFeature "SE15" NthSample 5 0 16
+-SetWaveformFeature "SE15" NthSample 6 0 24
+-SetWaveformFeature "SE15" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "SE16"
+-CreateSpikeAcqEnt "SE16" "AcqSystem1" 1
+-SetAcqEntProcessingEnabled "SE16" True
+-SetChannelNumber "SE16" 15
+-SetAcqEntReference "SE16" 36000001
+-SetInputRange "SE16" 500
+-SetSubSamplingInterleave "SE16" 1
+-SetDspLowCutFilterEnabled "SE16" True
+-SetDspLowCutFrequency "SE16" 600
+-SetDspLowCutNumberTaps "SE16" 64
+-SetDspHighCutFilterEnabled "SE16" True
+-SetDspHighCutFrequency "SE16" 6000
+-SetDspHighCutNumberTaps "SE16" 32
+-SetInputInverted "SE16" False
+-SetDiskWriteEnabled "SE16" True
+-SetNetComDataBufferingEnabled "SE16" True
+-SetNetComDataBufferSize "SE16" 3000
+-SetSpikeThreshold "SE16" 250
+-SetSpikeDetectionType "SE16" Threshold
+-SetSpikeSlope "SE16" 0 100 160
+-SetSpikeDualThresholding "SE16" False
+-SetSpikeRetriggerTime "SE16" 750
+-SetSpikeAlignmentPoint "SE16" 8
+-SetSubChannelEnabled "SE16" 0 True
+-SetWaveformFeature "SE16" Peak 0 0
+-SetWaveformFeature "SE16" Valley 1 0
+-SetWaveformFeature "SE16" Energy 2 0
+-SetWaveformFeature "SE16" Height 3 0
+-SetWaveformFeature "SE16" NthSample 4 0 4
+-SetWaveformFeature "SE16" NthSample 5 0 16
+-SetWaveformFeature "SE16" NthSample 6 0 24
+-SetWaveformFeature "SE16" NthSample 7 0 28
+
+
+#Acquisition Entity creation and setup for: "CSC1"
+-CreateCscAcqEnt "CSC1" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC1" True
+-SetChannelNumber "CSC1" 1
+-SetAcqEntReference "CSC1" 36000001
+-SetInputRange "CSC1" 1000
+-SetSubSamplingInterleave "CSC1" 1
+-SetDspLowCutFilterEnabled "CSC1" True
+-SetDspLowCutFrequency "CSC1" 0.1
+-SetDspLowCutNumberTaps "CSC1" 0
+-SetDspHighCutFilterEnabled "CSC1" True
+-SetDspHighCutFrequency "CSC1" 9000
+-SetDspHighCutNumberTaps "CSC1" 32
+-SetInputInverted "CSC1" False
+-SetDiskWriteEnabled "CSC1" True
+-SetNetComDataBufferingEnabled "CSC1" False
+-SetNetComDataBufferSize "CSC1" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC2"
+-CreateCscAcqEnt "CSC2" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC2" True
+-SetChannelNumber "CSC2" 2
+-SetAcqEntReference "CSC2" 36000001
+-SetInputRange "CSC2" 1000
+-SetSubSamplingInterleave "CSC2" 1
+-SetDspLowCutFilterEnabled "CSC2" True
+-SetDspLowCutFrequency "CSC2" 0.1
+-SetDspLowCutNumberTaps "CSC2" 0
+-SetDspHighCutFilterEnabled "CSC2" True
+-SetDspHighCutFrequency "CSC2" 9000
+-SetDspHighCutNumberTaps "CSC2" 32
+-SetInputInverted "CSC2" False
+-SetDiskWriteEnabled "CSC2" True
+-SetNetComDataBufferingEnabled "CSC2" False
+-SetNetComDataBufferSize "CSC2" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC3"
+-CreateCscAcqEnt "CSC3" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC3" True
+-SetChannelNumber "CSC3" 6
+-SetAcqEntReference "CSC3" 36000001
+-SetInputRange "CSC3" 1000
+-SetSubSamplingInterleave "CSC3" 1
+-SetDspLowCutFilterEnabled "CSC3" True
+-SetDspLowCutFrequency "CSC3" 0.1
+-SetDspLowCutNumberTaps "CSC3" 0
+-SetDspHighCutFilterEnabled "CSC3" True
+-SetDspHighCutFrequency "CSC3" 9000
+-SetDspHighCutNumberTaps "CSC3" 32
+-SetInputInverted "CSC3" False
+-SetDiskWriteEnabled "CSC3" True
+-SetNetComDataBufferingEnabled "CSC3" False
+-SetNetComDataBufferSize "CSC3" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC4"
+-CreateCscAcqEnt "CSC4" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC4" True
+-SetChannelNumber "CSC4" 4
+-SetAcqEntReference "CSC4" 36000001
+-SetInputRange "CSC4" 1000
+-SetSubSamplingInterleave "CSC4" 1
+-SetDspLowCutFilterEnabled "CSC4" True
+-SetDspLowCutFrequency "CSC4" 0.1
+-SetDspLowCutNumberTaps "CSC4" 0
+-SetDspHighCutFilterEnabled "CSC4" True
+-SetDspHighCutFrequency "CSC4" 9000
+-SetDspHighCutNumberTaps "CSC4" 32
+-SetInputInverted "CSC4" False
+-SetDiskWriteEnabled "CSC4" True
+-SetNetComDataBufferingEnabled "CSC4" False
+-SetNetComDataBufferSize "CSC4" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC5"
+-CreateCscAcqEnt "CSC5" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC5" True
+-SetChannelNumber "CSC5" 0
+-SetAcqEntReference "CSC5" 36000001
+-SetInputRange "CSC5" 1000
+-SetSubSamplingInterleave "CSC5" 1
+-SetDspLowCutFilterEnabled "CSC5" True
+-SetDspLowCutFrequency "CSC5" 0.1
+-SetDspLowCutNumberTaps "CSC5" 0
+-SetDspHighCutFilterEnabled "CSC5" True
+-SetDspHighCutFrequency "CSC5" 9000
+-SetDspHighCutNumberTaps "CSC5" 32
+-SetInputInverted "CSC5" False
+-SetDiskWriteEnabled "CSC5" True
+-SetNetComDataBufferingEnabled "CSC5" False
+-SetNetComDataBufferSize "CSC5" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC6"
+-CreateCscAcqEnt "CSC6" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC6" True
+-SetChannelNumber "CSC6" 5
+-SetAcqEntReference "CSC6" 36000001
+-SetInputRange "CSC6" 1000
+-SetSubSamplingInterleave "CSC6" 1
+-SetDspLowCutFilterEnabled "CSC6" True
+-SetDspLowCutFrequency "CSC6" 0.1
+-SetDspLowCutNumberTaps "CSC6" 0
+-SetDspHighCutFilterEnabled "CSC6" True
+-SetDspHighCutFrequency "CSC6" 9000
+-SetDspHighCutNumberTaps "CSC6" 32
+-SetInputInverted "CSC6" False
+-SetDiskWriteEnabled "CSC6" True
+-SetNetComDataBufferingEnabled "CSC6" False
+-SetNetComDataBufferSize "CSC6" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC7"
+-CreateCscAcqEnt "CSC7" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC7" True
+-SetChannelNumber "CSC7" 7
+-SetAcqEntReference "CSC7" 36000001
+-SetInputRange "CSC7" 1000
+-SetSubSamplingInterleave "CSC7" 1
+-SetDspLowCutFilterEnabled "CSC7" True
+-SetDspLowCutFrequency "CSC7" 0.1
+-SetDspLowCutNumberTaps "CSC7" 0
+-SetDspHighCutFilterEnabled "CSC7" True
+-SetDspHighCutFrequency "CSC7" 9000
+-SetDspHighCutNumberTaps "CSC7" 32
+-SetInputInverted "CSC7" False
+-SetDiskWriteEnabled "CSC7" True
+-SetNetComDataBufferingEnabled "CSC7" False
+-SetNetComDataBufferSize "CSC7" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC8"
+-CreateCscAcqEnt "CSC8" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC8" True
+-SetChannelNumber "CSC8" 3
+-SetAcqEntReference "CSC8" 36000001
+-SetInputRange "CSC8" 1000
+-SetSubSamplingInterleave "CSC8" 1
+-SetDspLowCutFilterEnabled "CSC8" True
+-SetDspLowCutFrequency "CSC8" 0.1
+-SetDspLowCutNumberTaps "CSC8" 0
+-SetDspHighCutFilterEnabled "CSC8" True
+-SetDspHighCutFrequency "CSC8" 9000
+-SetDspHighCutNumberTaps "CSC8" 32
+-SetInputInverted "CSC8" False
+-SetDiskWriteEnabled "CSC8" True
+-SetNetComDataBufferingEnabled "CSC8" False
+-SetNetComDataBufferSize "CSC8" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC9"
+-CreateCscAcqEnt "CSC9" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC9" True
+-SetChannelNumber "CSC9" 11
+-SetAcqEntReference "CSC9" 36000001
+-SetInputRange "CSC9" 1000
+-SetSubSamplingInterleave "CSC9" 1
+-SetDspLowCutFilterEnabled "CSC9" True
+-SetDspLowCutFrequency "CSC9" 0.1
+-SetDspLowCutNumberTaps "CSC9" 0
+-SetDspHighCutFilterEnabled "CSC9" True
+-SetDspHighCutFrequency "CSC9" 9000
+-SetDspHighCutNumberTaps "CSC9" 32
+-SetInputInverted "CSC9" False
+-SetDiskWriteEnabled "CSC9" True
+-SetNetComDataBufferingEnabled "CSC9" False
+-SetNetComDataBufferSize "CSC9" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC10"
+-CreateCscAcqEnt "CSC10" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC10" True
+-SetChannelNumber "CSC10" 9
+-SetAcqEntReference "CSC10" 36000001
+-SetInputRange "CSC10" 1000
+-SetSubSamplingInterleave "CSC10" 1
+-SetDspLowCutFilterEnabled "CSC10" True
+-SetDspLowCutFrequency "CSC10" 0.1
+-SetDspLowCutNumberTaps "CSC10" 0
+-SetDspHighCutFilterEnabled "CSC10" True
+-SetDspHighCutFrequency "CSC10" 9000
+-SetDspHighCutNumberTaps "CSC10" 32
+-SetInputInverted "CSC10" False
+-SetDiskWriteEnabled "CSC10" True
+-SetNetComDataBufferingEnabled "CSC10" False
+-SetNetComDataBufferSize "CSC10" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC11"
+-CreateCscAcqEnt "CSC11" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC11" True
+-SetChannelNumber "CSC11" 13
+-SetAcqEntReference "CSC11" 36000001
+-SetInputRange "CSC11" 1000
+-SetSubSamplingInterleave "CSC11" 1
+-SetDspLowCutFilterEnabled "CSC11" True
+-SetDspLowCutFrequency "CSC11" 0.1
+-SetDspLowCutNumberTaps "CSC11" 0
+-SetDspHighCutFilterEnabled "CSC11" True
+-SetDspHighCutFrequency "CSC11" 9000
+-SetDspHighCutNumberTaps "CSC11" 32
+-SetInputInverted "CSC11" False
+-SetDiskWriteEnabled "CSC11" True
+-SetNetComDataBufferingEnabled "CSC11" False
+-SetNetComDataBufferSize "CSC11" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC12"
+-CreateCscAcqEnt "CSC12" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC12" True
+-SetChannelNumber "CSC12" 14
+-SetAcqEntReference "CSC12" 36000001
+-SetInputRange "CSC12" 1000
+-SetSubSamplingInterleave "CSC12" 1
+-SetDspLowCutFilterEnabled "CSC12" True
+-SetDspLowCutFrequency "CSC12" 0.1
+-SetDspLowCutNumberTaps "CSC12" 0
+-SetDspHighCutFilterEnabled "CSC12" True
+-SetDspHighCutFrequency "CSC12" 9000
+-SetDspHighCutNumberTaps "CSC12" 32
+-SetInputInverted "CSC12" False
+-SetDiskWriteEnabled "CSC12" True
+-SetNetComDataBufferingEnabled "CSC12" False
+-SetNetComDataBufferSize "CSC12" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC13"
+-CreateCscAcqEnt "CSC13" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC13" True
+-SetChannelNumber "CSC13" 12
+-SetAcqEntReference "CSC13" 36000001
+-SetInputRange "CSC13" 1000
+-SetSubSamplingInterleave "CSC13" 1
+-SetDspLowCutFilterEnabled "CSC13" True
+-SetDspLowCutFrequency "CSC13" 0.1
+-SetDspLowCutNumberTaps "CSC13" 0
+-SetDspHighCutFilterEnabled "CSC13" True
+-SetDspHighCutFrequency "CSC13" 9000
+-SetDspHighCutNumberTaps "CSC13" 32
+-SetInputInverted "CSC13" False
+-SetDiskWriteEnabled "CSC13" True
+-SetNetComDataBufferingEnabled "CSC13" False
+-SetNetComDataBufferSize "CSC13" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC14"
+-CreateCscAcqEnt "CSC14" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC14" True
+-SetChannelNumber "CSC14" 8
+-SetAcqEntReference "CSC14" 36000001
+-SetInputRange "CSC14" 1000
+-SetSubSamplingInterleave "CSC14" 1
+-SetDspLowCutFilterEnabled "CSC14" True
+-SetDspLowCutFrequency "CSC14" 0.1
+-SetDspLowCutNumberTaps "CSC14" 0
+-SetDspHighCutFilterEnabled "CSC14" True
+-SetDspHighCutFrequency "CSC14" 9000
+-SetDspHighCutNumberTaps "CSC14" 32
+-SetInputInverted "CSC14" False
+-SetDiskWriteEnabled "CSC14" True
+-SetNetComDataBufferingEnabled "CSC14" False
+-SetNetComDataBufferSize "CSC14" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC15"
+-CreateCscAcqEnt "CSC15" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC15" True
+-SetChannelNumber "CSC15" 10
+-SetAcqEntReference "CSC15" 36000001
+-SetInputRange "CSC15" 1000
+-SetSubSamplingInterleave "CSC15" 1
+-SetDspLowCutFilterEnabled "CSC15" True
+-SetDspLowCutFrequency "CSC15" 0.1
+-SetDspLowCutNumberTaps "CSC15" 0
+-SetDspHighCutFilterEnabled "CSC15" True
+-SetDspHighCutFrequency "CSC15" 9000
+-SetDspHighCutNumberTaps "CSC15" 32
+-SetInputInverted "CSC15" False
+-SetDiskWriteEnabled "CSC15" True
+-SetNetComDataBufferingEnabled "CSC15" False
+-SetNetComDataBufferSize "CSC15" 3000
+
+
+#Acquisition Entity creation and setup for: "CSC16"
+-CreateCscAcqEnt "CSC16" "AcqSystem1"
+-SetAcqEntProcessingEnabled "CSC16" True
+-SetChannelNumber "CSC16" 15
+-SetAcqEntReference "CSC16" 36000001
+-SetInputRange "CSC16" 1000
+-SetSubSamplingInterleave "CSC16" 1
+-SetDspLowCutFilterEnabled "CSC16" True
+-SetDspLowCutFrequency "CSC16" 0.1
+-SetDspLowCutNumberTaps "CSC16" 0
+-SetDspHighCutFilterEnabled "CSC16" True
+-SetDspHighCutFrequency "CSC16" 9000
+-SetDspHighCutNumberTaps "CSC16" 32
+-SetInputInverted "CSC16" False
+-SetDiskWriteEnabled "CSC16" True
+-SetNetComDataBufferingEnabled "CSC16" False
+-SetNetComDataBufferSize "CSC16" 3000
+
+
+
+-SetDSPDelayCompensationEnabled False
+#Main window setup
+-SetDialogPosition Main -8 -8
+-SetDialogVisible Main True
+
+
+#System Status Dialog Setup
+-SetSystemStatusShowDetails True
+-SetDialogPosition Status 1027 1196
+-SetSystemStatusMessageFilter Fatal on
+-SetSystemStatusMessageFilter Error on
+-SetSystemStatusMessageFilter Warning on
+-SetSystemStatusMessageFilter Notice off
+-SetSystemStatusMessageFilter Data off
+-SetDialogVisible Status True
+
+
+#Properties Display Setup
+-SetDialogPosition Properties 1137 1255
+-SetDialogVisible Properties True
+
+
+#Event Dialog Setup
+-SetDialogPosition Events 0 42
+-SetDialogVisible Events False
+-SetEventStringImmediateMode Off
+-SetEventStringSingleKeyMode Off
+-SetEventDisplayTTLValueFormat Binary
+
+
+# Plot Window Setup for Shank 1 Tethrode 1 Spikes
+-CreatePlotWindow Spike "Shank 1 Tethrode 1 Spikes"
+-SetPlotWindowPlotType "Shank 1 Tethrode 1 Spikes" WaveformFeature
+-SetPlotWindowShowIcons "Shank 1 Tethrode 1 Spikes" true
+-SetPlotWindowShowTextValues "Shank 1 Tethrode 1 Spikes" true
+-SetPlotWindowNumberFeaturePlotsMaximizedView "Shank 1 Tethrode 1 Spikes" 1
+-SetPlotWindowNumberFeaturePlotsNormalView "Shank 1 Tethrode 1 Spikes" 1
+-SetPlotWindowPosition "Shank 1 Tethrode 1 Spikes" 0 151 1100 700
+-SetPlotWindowOverlay "Shank 1 Tethrode 1 Spikes" false
+-SetPlotWindowShowTitleBar "Shank 1 Tethrode 1 Spikes" true
+-SetPlotWindowFrozen "Shank 1 Tethrode 1 Spikes" false
+# Plot addition and setup for Shank 1 Tethrode 1 Spikes
+-AddPlot "Shank 1 Tethrode 1 Spikes" "SE1"
+-SetPlotEnabled "Shank 1 Tethrode 1 Spikes" "SE1" "True"
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 0 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 1 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 2 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 3 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 4 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 5 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 6 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 7 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 8 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 9 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 10 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 11 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 12 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 13 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 14 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 15 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 16 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 17 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 18 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 19 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 20 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 21 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 22 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 23 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 24 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 25 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 26 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 27 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 28 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 29 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 30 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE1" 31 on
+-SetFeaturePlotSources "Shank 1 Tethrode 1 Spikes" "SE1" 0 0 1
+-SetFeaturePlotView "Shank 1 Tethrode 1 Spikes" "SE1" 0 -32767 32767 32767 -32767
+-AddPlot "Shank 1 Tethrode 1 Spikes" "SE2"
+-SetPlotEnabled "Shank 1 Tethrode 1 Spikes" "SE2" "True"
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 0 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 1 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 2 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 3 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 4 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 5 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 6 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 7 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 8 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 9 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 10 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 11 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 12 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 13 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 14 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 15 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 16 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 17 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 18 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 19 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 20 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 21 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 22 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 23 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 24 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 25 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 26 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 27 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 28 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 29 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 30 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE2" 31 on
+-SetFeaturePlotSources "Shank 1 Tethrode 1 Spikes" "SE2" 0 0 1
+-SetFeaturePlotView "Shank 1 Tethrode 1 Spikes" "SE2" 0 -32767 32767 32767 -32767
+-AddPlot "Shank 1 Tethrode 1 Spikes" "SE3"
+-SetPlotEnabled "Shank 1 Tethrode 1 Spikes" "SE3" "True"
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 0 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 1 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 2 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 3 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 4 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 5 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 6 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 7 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 8 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 9 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 10 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 11 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 12 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 13 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 14 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 15 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 16 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 17 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 18 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 19 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 20 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 21 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 22 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 23 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 24 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 25 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 26 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 27 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 28 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 29 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 30 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE3" 31 on
+-SetFeaturePlotSources "Shank 1 Tethrode 1 Spikes" "SE3" 0 0 1
+-SetFeaturePlotView "Shank 1 Tethrode 1 Spikes" "SE3" 0 -32767 32767 32767 -32767
+-AddPlot "Shank 1 Tethrode 1 Spikes" "SE4"
+-SetPlotEnabled "Shank 1 Tethrode 1 Spikes" "SE4" "True"
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 0 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 1 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 2 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 3 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 4 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 5 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 6 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 7 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 8 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 9 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 10 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 11 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 12 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 13 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 14 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 15 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 16 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 17 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 18 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 19 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 20 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 21 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 22 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 23 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 24 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 25 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 26 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 27 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 28 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 29 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 30 on
+-SetClusterDisplay "Shank 1 Tethrode 1 Spikes" "SE4" 31 on
+-SetFeaturePlotSources "Shank 1 Tethrode 1 Spikes" "SE4" 0 0 1
+-SetFeaturePlotView "Shank 1 Tethrode 1 Spikes" "SE4" 0 -32767 32767 32767 -32767
+-SetPlotWindowCurrentPlot "Shank 1 Tethrode 1 Spikes" "SE4"
+-SetPlotWindowMaximizeView "Shank 1 Tethrode 1 Spikes" false
+
+
+# Plot Window Setup for Shank 1 Tethrode 2 Spikes
+-CreatePlotWindow Spike "Shank 1 Tethrode 2 Spikes"
+-SetPlotWindowPlotType "Shank 1 Tethrode 2 Spikes" WaveformFeature
+-SetPlotWindowShowIcons "Shank 1 Tethrode 2 Spikes" true
+-SetPlotWindowShowTextValues "Shank 1 Tethrode 2 Spikes" true
+-SetPlotWindowNumberFeaturePlotsMaximizedView "Shank 1 Tethrode 2 Spikes" 1
+-SetPlotWindowNumberFeaturePlotsNormalView "Shank 1 Tethrode 2 Spikes" 1
+-SetPlotWindowPosition "Shank 1 Tethrode 2 Spikes" 0 363 1100 700
+-SetPlotWindowOverlay "Shank 1 Tethrode 2 Spikes" false
+-SetPlotWindowShowTitleBar "Shank 1 Tethrode 2 Spikes" true
+-SetPlotWindowFrozen "Shank 1 Tethrode 2 Spikes" false
+# Plot addition and setup for Shank 1 Tethrode 2 Spikes
+-AddPlot "Shank 1 Tethrode 2 Spikes" "SE5"
+-SetPlotEnabled "Shank 1 Tethrode 2 Spikes" "SE5" "True"
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 0 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 1 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 2 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 3 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 4 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 5 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 6 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 7 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 8 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 9 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 10 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 11 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 12 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 13 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 14 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 15 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 16 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 17 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 18 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 19 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 20 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 21 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 22 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 23 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 24 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 25 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 26 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 27 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 28 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 29 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 30 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE5" 31 on
+-SetFeaturePlotSources "Shank 1 Tethrode 2 Spikes" "SE5" 0 0 1
+-SetFeaturePlotView "Shank 1 Tethrode 2 Spikes" "SE5" 0 -32767 32767 32767 -32767
+-AddPlot "Shank 1 Tethrode 2 Spikes" "SE6"
+-SetPlotEnabled "Shank 1 Tethrode 2 Spikes" "SE6" "True"
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 0 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 1 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 2 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 3 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 4 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 5 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 6 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 7 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 8 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 9 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 10 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 11 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 12 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 13 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 14 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 15 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 16 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 17 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 18 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 19 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 20 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 21 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 22 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 23 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 24 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 25 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 26 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 27 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 28 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 29 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 30 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE6" 31 on
+-SetFeaturePlotSources "Shank 1 Tethrode 2 Spikes" "SE6" 0 0 1
+-SetFeaturePlotView "Shank 1 Tethrode 2 Spikes" "SE6" 0 -32767 32767 32767 -32767
+-AddPlot "Shank 1 Tethrode 2 Spikes" "SE7"
+-SetPlotEnabled "Shank 1 Tethrode 2 Spikes" "SE7" "True"
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 0 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 1 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 2 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 3 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 4 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 5 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 6 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 7 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 8 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 9 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 10 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 11 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 12 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 13 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 14 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 15 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 16 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 17 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 18 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 19 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 20 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 21 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 22 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 23 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 24 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 25 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 26 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 27 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 28 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 29 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 30 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE7" 31 on
+-SetFeaturePlotSources "Shank 1 Tethrode 2 Spikes" "SE7" 0 0 1
+-SetFeaturePlotView "Shank 1 Tethrode 2 Spikes" "SE7" 0 -32767 32767 32767 -32767
+-AddPlot "Shank 1 Tethrode 2 Spikes" "SE8"
+-SetPlotEnabled "Shank 1 Tethrode 2 Spikes" "SE8" "True"
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 0 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 1 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 2 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 3 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 4 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 5 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 6 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 7 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 8 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 9 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 10 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 11 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 12 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 13 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 14 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 15 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 16 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 17 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 18 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 19 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 20 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 21 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 22 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 23 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 24 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 25 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 26 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 27 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 28 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 29 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 30 on
+-SetClusterDisplay "Shank 1 Tethrode 2 Spikes" "SE8" 31 on
+-SetFeaturePlotSources "Shank 1 Tethrode 2 Spikes" "SE8" 0 0 1
+-SetFeaturePlotView "Shank 1 Tethrode 2 Spikes" "SE8" 0 -32767 32767 32767 -32767
+-SetPlotWindowCurrentPlot "Shank 1 Tethrode 2 Spikes" "SE8"
+-SetPlotWindowMaximizeView "Shank 1 Tethrode 2 Spikes" false
+
+
+# Plot Window Setup for Shank 2 Tethrode 1 Spikes
+-CreatePlotWindow Spike "Shank 2 Tethrode 1 Spikes"
+-SetPlotWindowPlotType "Shank 2 Tethrode 1 Spikes" WaveformFeature
+-SetPlotWindowShowIcons "Shank 2 Tethrode 1 Spikes" true
+-SetPlotWindowShowTextValues "Shank 2 Tethrode 1 Spikes" true
+-SetPlotWindowNumberFeaturePlotsMaximizedView "Shank 2 Tethrode 1 Spikes" 1
+-SetPlotWindowNumberFeaturePlotsNormalView "Shank 2 Tethrode 1 Spikes" 1
+-SetPlotWindowPosition "Shank 2 Tethrode 1 Spikes" 0 153 1100 700
+-SetPlotWindowOverlay "Shank 2 Tethrode 1 Spikes" false
+-SetPlotWindowShowTitleBar "Shank 2 Tethrode 1 Spikes" true
+-SetPlotWindowFrozen "Shank 2 Tethrode 1 Spikes" false
+# Plot addition and setup for Shank 2 Tethrode 1 Spikes
+-AddPlot "Shank 2 Tethrode 1 Spikes" "SE9"
+-SetPlotEnabled "Shank 2 Tethrode 1 Spikes" "SE9" "True"
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 0 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 1 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 2 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 3 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 4 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 5 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 6 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 7 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 8 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 9 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 10 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 11 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 12 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 13 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 14 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 15 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 16 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 17 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 18 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 19 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 20 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 21 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 22 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 23 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 24 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 25 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 26 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 27 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 28 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 29 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 30 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE9" 31 on
+-SetFeaturePlotSources "Shank 2 Tethrode 1 Spikes" "SE9" 0 0 1
+-SetFeaturePlotView "Shank 2 Tethrode 1 Spikes" "SE9" 0 -32767 32767 32767 -32767
+-AddPlot "Shank 2 Tethrode 1 Spikes" "SE10"
+-SetPlotEnabled "Shank 2 Tethrode 1 Spikes" "SE10" "True"
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 0 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 1 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 2 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 3 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 4 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 5 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 6 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 7 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 8 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 9 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 10 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 11 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 12 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 13 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 14 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 15 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 16 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 17 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 18 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 19 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 20 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 21 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 22 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 23 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 24 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 25 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 26 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 27 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 28 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 29 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 30 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE10" 31 on
+-SetFeaturePlotSources "Shank 2 Tethrode 1 Spikes" "SE10" 0 0 1
+-SetFeaturePlotView "Shank 2 Tethrode 1 Spikes" "SE10" 0 -32767 32767 32767 -32767
+-AddPlot "Shank 2 Tethrode 1 Spikes" "SE11"
+-SetPlotEnabled "Shank 2 Tethrode 1 Spikes" "SE11" "True"
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 0 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 1 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 2 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 3 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 4 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 5 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 6 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 7 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 8 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 9 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 10 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 11 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 12 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 13 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 14 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 15 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 16 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 17 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 18 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 19 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 20 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 21 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 22 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 23 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 24 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 25 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 26 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 27 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 28 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 29 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 30 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE11" 31 on
+-SetFeaturePlotSources "Shank 2 Tethrode 1 Spikes" "SE11" 0 0 1
+-SetFeaturePlotView "Shank 2 Tethrode 1 Spikes" "SE11" 0 -32767 32767 32767 -32767
+-AddPlot "Shank 2 Tethrode 1 Spikes" "SE12"
+-SetPlotEnabled "Shank 2 Tethrode 1 Spikes" "SE12" "True"
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 0 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 1 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 2 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 3 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 4 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 5 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 6 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 7 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 8 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 9 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 10 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 11 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 12 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 13 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 14 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 15 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 16 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 17 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 18 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 19 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 20 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 21 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 22 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 23 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 24 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 25 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 26 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 27 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 28 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 29 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 30 on
+-SetClusterDisplay "Shank 2 Tethrode 1 Spikes" "SE12" 31 on
+-SetFeaturePlotSources "Shank 2 Tethrode 1 Spikes" "SE12" 0 0 1
+-SetFeaturePlotView "Shank 2 Tethrode 1 Spikes" "SE12" 0 -32767 32767 32767 -32767
+-SetPlotWindowCurrentPlot "Shank 2 Tethrode 1 Spikes" "SE12"
+-SetPlotWindowMaximizeView "Shank 2 Tethrode 1 Spikes" false
+
+
+# Plot Window Setup for Shank 2 Tethrode 2 Spikes
+-CreatePlotWindow Spike "Shank 2 Tethrode 2 Spikes"
+-SetPlotWindowPlotType "Shank 2 Tethrode 2 Spikes" WaveformFeature
+-SetPlotWindowShowIcons "Shank 2 Tethrode 2 Spikes" true
+-SetPlotWindowShowTextValues "Shank 2 Tethrode 2 Spikes" true
+-SetPlotWindowNumberFeaturePlotsMaximizedView "Shank 2 Tethrode 2 Spikes" 1
+-SetPlotWindowNumberFeaturePlotsNormalView "Shank 2 Tethrode 2 Spikes" 1
+-SetPlotWindowPosition "Shank 2 Tethrode 2 Spikes" 0 456 1100 607
+-SetPlotWindowOverlay "Shank 2 Tethrode 2 Spikes" false
+-SetPlotWindowShowTitleBar "Shank 2 Tethrode 2 Spikes" true
+-SetPlotWindowFrozen "Shank 2 Tethrode 2 Spikes" false
+# Plot addition and setup for Shank 2 Tethrode 2 Spikes
+-AddPlot "Shank 2 Tethrode 2 Spikes" "SE13"
+-SetPlotEnabled "Shank 2 Tethrode 2 Spikes" "SE13" "True"
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 0 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 1 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 2 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 3 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 4 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 5 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 6 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 7 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 8 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 9 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 10 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 11 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 12 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 13 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 14 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 15 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 16 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 17 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 18 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 19 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 20 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 21 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 22 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 23 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 24 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 25 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 26 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 27 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 28 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 29 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 30 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE13" 31 on
+-SetFeaturePlotSources "Shank 2 Tethrode 2 Spikes" "SE13" 0 0 1
+-SetFeaturePlotView "Shank 2 Tethrode 2 Spikes" "SE13" 0 -32767 32767 32767 -32767
+-AddPlot "Shank 2 Tethrode 2 Spikes" "SE14"
+-SetPlotEnabled "Shank 2 Tethrode 2 Spikes" "SE14" "True"
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 0 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 1 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 2 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 3 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 4 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 5 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 6 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 7 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 8 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 9 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 10 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 11 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 12 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 13 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 14 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 15 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 16 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 17 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 18 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 19 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 20 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 21 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 22 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 23 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 24 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 25 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 26 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 27 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 28 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 29 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 30 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE14" 31 on
+-SetFeaturePlotSources "Shank 2 Tethrode 2 Spikes" "SE14" 0 0 1
+-SetFeaturePlotView "Shank 2 Tethrode 2 Spikes" "SE14" 0 -32767 32767 32767 -32767
+-AddPlot "Shank 2 Tethrode 2 Spikes" "SE15"
+-SetPlotEnabled "Shank 2 Tethrode 2 Spikes" "SE15" "True"
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 0 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 1 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 2 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 3 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 4 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 5 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 6 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 7 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 8 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 9 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 10 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 11 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 12 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 13 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 14 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 15 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 16 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 17 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 18 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 19 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 20 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 21 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 22 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 23 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 24 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 25 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 26 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 27 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 28 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 29 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 30 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE15" 31 on
+-SetFeaturePlotSources "Shank 2 Tethrode 2 Spikes" "SE15" 0 0 1
+-SetFeaturePlotView "Shank 2 Tethrode 2 Spikes" "SE15" 0 -32767 32767 32767 -32767
+-AddPlot "Shank 2 Tethrode 2 Spikes" "SE16"
+-SetPlotEnabled "Shank 2 Tethrode 2 Spikes" "SE16" "True"
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 0 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 1 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 2 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 3 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 4 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 5 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 6 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 7 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 8 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 9 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 10 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 11 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 12 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 13 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 14 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 15 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 16 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 17 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 18 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 19 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 20 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 21 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 22 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 23 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 24 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 25 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 26 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 27 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 28 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 29 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 30 on
+-SetClusterDisplay "Shank 2 Tethrode 2 Spikes" "SE16" 31 on
+-SetFeaturePlotSources "Shank 2 Tethrode 2 Spikes" "SE16" 0 0 1
+-SetFeaturePlotView "Shank 2 Tethrode 2 Spikes" "SE16" 0 -32767 32767 32767 -32767
+-SetPlotWindowCurrentPlot "Shank 2 Tethrode 2 Spikes" "SE16"
+-SetPlotWindowMaximizeView "Shank 2 Tethrode 2 Spikes" false
+
+
+# Plot Window Setup for Shank 1 Tethrode 1
+-CreatePlotWindow Time "Shank 1 Tethrode 1"
+-SetPlotWindowSpreadType "Shank 1 Tethrode 1" Spread
+-SetPlotWindowPlotType "Shank 1 Tethrode 1" Sweep
+-SetPlotWindowTimeframe "Shank 1 Tethrode 1" 5000
+-SetPlotWindowShowGridLines "Shank 1 Tethrode 1" True
+-SetPlotWindowPosition "Shank 1 Tethrode 1" 8 40 942 1030
+-SetPlotWindowOverlay "Shank 1 Tethrode 1" false
+-SetPlotWindowShowTitleBar "Shank 1 Tethrode 1" true
+-SetPlotWindowFrozen "Shank 1 Tethrode 1" false
+# Plot addition and setup for Shank 1 Tethrode 1
+-AddPlot "Shank 1 Tethrode 1" "CSC1"
+-SetPlotEnabled "Shank 1 Tethrode 1" "CSC1" "True"
+-SetTimePlotZoomFactor "Shank 1 Tethrode 1" "CSC1" 2
+-AddPlot "Shank 1 Tethrode 1" "CSC2"
+-SetPlotEnabled "Shank 1 Tethrode 1" "CSC2" "True"
+-SetTimePlotZoomFactor "Shank 1 Tethrode 1" "CSC2" 2
+-AddPlot "Shank 1 Tethrode 1" "CSC3"
+-SetPlotEnabled "Shank 1 Tethrode 1" "CSC3" "True"
+-SetTimePlotZoomFactor "Shank 1 Tethrode 1" "CSC3" 2
+-AddPlot "Shank 1 Tethrode 1" "CSC4"
+-SetPlotEnabled "Shank 1 Tethrode 1" "CSC4" "True"
+-SetTimePlotZoomFactor "Shank 1 Tethrode 1" "CSC4" 2
+-AddPlot "Shank 1 Tethrode 1" "Events"
+-SetPlotEnabled "Shank 1 Tethrode 1" "Events" "True"
+-SetTimePlotZoomFactor "Shank 1 Tethrode 1" "Events" 2
+-SetPlotWindowCurrentPlot "Shank 1 Tethrode 1" "CSC3"
+-SetPlotWindowMaximizeView "Shank 1 Tethrode 1" false
+
+
+# Plot Window Setup for Shank 1 Tethrode 2
+-CreatePlotWindow Time "Shank 1 Tethrode 2"
+-SetPlotWindowSpreadType "Shank 1 Tethrode 2" Spread
+-SetPlotWindowPlotType "Shank 1 Tethrode 2" Sweep
+-SetPlotWindowTimeframe "Shank 1 Tethrode 2" 5000
+-SetPlotWindowShowGridLines "Shank 1 Tethrode 2" True
+-SetPlotWindowPosition "Shank 1 Tethrode 2" 39 1072 930 1035
+-SetPlotWindowOverlay "Shank 1 Tethrode 2" false
+-SetPlotWindowShowTitleBar "Shank 1 Tethrode 2" true
+-SetPlotWindowFrozen "Shank 1 Tethrode 2" false
+# Plot addition and setup for Shank 1 Tethrode 2
+-AddPlot "Shank 1 Tethrode 2" "CSC5"
+-SetPlotEnabled "Shank 1 Tethrode 2" "CSC5" "True"
+-SetTimePlotZoomFactor "Shank 1 Tethrode 2" "CSC5" 2
+-AddPlot "Shank 1 Tethrode 2" "CSC6"
+-SetPlotEnabled "Shank 1 Tethrode 2" "CSC6" "True"
+-SetTimePlotZoomFactor "Shank 1 Tethrode 2" "CSC6" 2
+-AddPlot "Shank 1 Tethrode 2" "CSC7"
+-SetPlotEnabled "Shank 1 Tethrode 2" "CSC7" "True"
+-SetTimePlotZoomFactor "Shank 1 Tethrode 2" "CSC7" 2
+-AddPlot "Shank 1 Tethrode 2" "CSC8"
+-SetPlotEnabled "Shank 1 Tethrode 2" "CSC8" "True"
+-SetTimePlotZoomFactor "Shank 1 Tethrode 2" "CSC8" 2
+-AddPlot "Shank 1 Tethrode 2" "Events"
+-SetPlotEnabled "Shank 1 Tethrode 2" "Events" "True"
+-SetTimePlotZoomFactor "Shank 1 Tethrode 2" "Events" 2
+-SetPlotWindowCurrentPlot "Shank 1 Tethrode 2" "CSC5"
+-SetPlotWindowMaximizeView "Shank 1 Tethrode 2" false
+
+
+# Plot Window Setup for Shank 2 Tethrode 1
+-CreatePlotWindow Time "Shank 2 Tethrode 1"
+-SetPlotWindowSpreadType "Shank 2 Tethrode 1" Spread
+-SetPlotWindowPlotType "Shank 2 Tethrode 1" Sweep
+-SetPlotWindowTimeframe "Shank 2 Tethrode 1" 5000
+-SetPlotWindowShowGridLines "Shank 2 Tethrode 1" True
+-SetPlotWindowPosition "Shank 2 Tethrode 1" 946 43 989 1027
+-SetPlotWindowOverlay "Shank 2 Tethrode 1" false
+-SetPlotWindowShowTitleBar "Shank 2 Tethrode 1" true
+-SetPlotWindowFrozen "Shank 2 Tethrode 1" false
+# Plot addition and setup for Shank 2 Tethrode 1
+-AddPlot "Shank 2 Tethrode 1" "CSC9"
+-SetPlotEnabled "Shank 2 Tethrode 1" "CSC9" "True"
+-SetTimePlotZoomFactor "Shank 2 Tethrode 1" "CSC9" 2
+-AddPlot "Shank 2 Tethrode 1" "CSC10"
+-SetPlotEnabled "Shank 2 Tethrode 1" "CSC10" "True"
+-SetTimePlotZoomFactor "Shank 2 Tethrode 1" "CSC10" 2
+-AddPlot "Shank 2 Tethrode 1" "CSC11"
+-SetPlotEnabled "Shank 2 Tethrode 1" "CSC11" "True"
+-SetTimePlotZoomFactor "Shank 2 Tethrode 1" "CSC11" 2
+-AddPlot "Shank 2 Tethrode 1" "CSC12"
+-SetPlotEnabled "Shank 2 Tethrode 1" "CSC12" "True"
+-SetTimePlotZoomFactor "Shank 2 Tethrode 1" "CSC12" 2
+-AddPlot "Shank 2 Tethrode 1" "Events"
+-SetPlotEnabled "Shank 2 Tethrode 1" "Events" "True"
+-SetTimePlotZoomFactor "Shank 2 Tethrode 1" "Events" 2
+-SetPlotWindowCurrentPlot "Shank 2 Tethrode 1" "CSC12"
+-SetPlotWindowMaximizeView "Shank 2 Tethrode 1" false
+
+
+# Plot Window Setup for Shank 2 Tethrode 2
+-CreatePlotWindow Time "Shank 2 Tethrode 2"
+-SetPlotWindowSpreadType "Shank 2 Tethrode 2" Spread
+-SetPlotWindowPlotType "Shank 2 Tethrode 2" Sweep
+-SetPlotWindowTimeframe "Shank 2 Tethrode 2" 5000
+-SetPlotWindowShowGridLines "Shank 2 Tethrode 2" True
+-SetPlotWindowPosition "Shank 2 Tethrode 2" 969 1082 959 1033
+-SetPlotWindowOverlay "Shank 2 Tethrode 2" false
+-SetPlotWindowShowTitleBar "Shank 2 Tethrode 2" true
+-SetPlotWindowFrozen "Shank 2 Tethrode 2" false
+# Plot addition and setup for Shank 2 Tethrode 2
+-AddPlot "Shank 2 Tethrode 2" "CSC13"
+-SetPlotEnabled "Shank 2 Tethrode 2" "CSC13" "True"
+-SetTimePlotZoomFactor "Shank 2 Tethrode 2" "CSC13" 2
+-AddPlot "Shank 2 Tethrode 2" "CSC14"
+-SetPlotEnabled "Shank 2 Tethrode 2" "CSC14" "True"
+-SetTimePlotZoomFactor "Shank 2 Tethrode 2" "CSC14" 2
+-AddPlot "Shank 2 Tethrode 2" "CSC15"
+-SetPlotEnabled "Shank 2 Tethrode 2" "CSC15" "True"
+-SetTimePlotZoomFactor "Shank 2 Tethrode 2" "CSC15" 2
+-AddPlot "Shank 2 Tethrode 2" "CSC16"
+-SetPlotEnabled "Shank 2 Tethrode 2" "CSC16" "True"
+-SetTimePlotZoomFactor "Shank 2 Tethrode 2" "CSC16" 2
+-AddPlot "Shank 2 Tethrode 2" "Events"
+-SetPlotEnabled "Shank 2 Tethrode 2" "Events" "True"
+-SetTimePlotZoomFactor "Shank 2 Tethrode 2" "Events" 2
+-SetPlotWindowCurrentPlot "Shank 2 Tethrode 2" "CSC13"
+-SetPlotWindowMaximizeView "Shank 2 Tethrode 2" false
+
+
+#Audio Output Dialog Setup
+-SetDialogPosition Audio 0 42
+-SetDialogVisible Audio False
+
+
+#TTL Response Dialog Setup
+-SetDialogPosition TTLResponse 0 42
+-SetDialogVisible TTLResponse False
+
+
+#Audio Device Setup for Primary Sound Driver
+-SetAudioSource "Primary Sound Driver" Left "None"
+-SetAudioVolume "Primary Sound Driver" Left 100
+-SetAudioMute "Primary Sound Driver" Left Off
+-SetAudioSource "Primary Sound Driver" Right "None"
+-SetAudioVolume "Primary Sound Driver" Right 100
+-SetAudioMute "Primary Sound Driver" Right Off
+
+
+#Audio Device Setup for AcqSystem1_Audio0
+-SetAudioSource "AcqSystem1_Audio0" Left "None"
+-SetAudioVolume "AcqSystem1_Audio0" Left 100
+-SetAudioMute "AcqSystem1_Audio0" Left Off
+-SetAudioSource "AcqSystem1_Audio0" Right "None"
+-SetAudioVolume "AcqSystem1_Audio0" Right 100
+-SetAudioMute "AcqSystem1_Audio0" Right Off
+
+
+#Audio Device Setup for AcqSystem1_Audio1
+-SetAudioSource "AcqSystem1_Audio1" Left "None"
+-SetAudioVolume "AcqSystem1_Audio1" Left 100
+-SetAudioMute "AcqSystem1_Audio1" Left Off
+-SetAudioSource "AcqSystem1_Audio1" Right "None"
+-SetAudioVolume "AcqSystem1_Audio1" Right 100
+-SetAudioMute "AcqSystem1_Audio1" Right Off
+
+
+#Digital IO Device Creation and Setup for: AcqSystem1_0
+-SetDigitalIOPortDirection "AcqSystem1_0" 0 Input
+-SetDigitalIOUseStrobeBit "AcqSystem1_0" 0 False
+-SetDigitalIOEventsEnabled "AcqSystem1_0" 0 True
+-SetDigitalIOPulseDuration "AcqSystem1_0" 0 15
+-SetDigitalIOPortDirection "AcqSystem1_0" 1 Input
+-SetDigitalIOUseStrobeBit "AcqSystem1_0" 1 False
+-SetDigitalIOEventsEnabled "AcqSystem1_0" 1 True
+-SetDigitalIOPulseDuration "AcqSystem1_0" 1 15
+-SetDigitalIOPortDirection "AcqSystem1_0" 2 Input
+-SetDigitalIOUseStrobeBit "AcqSystem1_0" 2 False
+-SetDigitalIOEventsEnabled "AcqSystem1_0" 2 True
+-SetDigitalIOPulseDuration "AcqSystem1_0" 2 15
+-SetDigitalIOPortDirection "AcqSystem1_0" 3 Input
+-SetDigitalIOUseStrobeBit "AcqSystem1_0" 3 False
+-SetDigitalIOEventsEnabled "AcqSystem1_0" 3 True
+-SetDigitalIOPulseDuration "AcqSystem1_0" 3 15
+-SetDigitalIOInputScanDelay "AcqSystem1_0" 1
