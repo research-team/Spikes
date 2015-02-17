@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.4
+#!/usr/bin/env python3
 
 
 """Usage: ncs2dat.py input [input...] output
