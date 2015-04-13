@@ -9,7 +9,7 @@
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="50" order="0"/>
-        <field id="1" name="Default role" width="49" order="1"/>
+        <field id="1" name="Default role" width="50" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -92,7 +92,7 @@
             <task id="10" name="Klasta wiev" meeting="false" start="2015-07-31" duration="15" complete="0" expand="true">
                 <depend id="11" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="11" name="MatLab" meeting="false" start="2015-08-21" duration="20" complete="0" expand="true"/>
+            <task id="11" name="WaveKlass" meeting="false" start="2015-08-21" duration="20" complete="0" expand="true"/>
         </task>
         <task id="12" name="Causality" meeting="false" start="2015-09-18" duration="35" complete="0" expand="true">
             <depend id="32" type="2" difference="0" hardness="Strong"/>
