@@ -45,49 +45,16 @@
             <task id="8" name="Scientific literature" meeting="false" start="2015-07-29" duration="80" complete="0" expand="true"/>
             <task id="9" name="Collaboration with experts" color="#8cb6ce" meeting="false" start="2015-08-26" duration="60" complete="0" expand="true"/>
         </task>
-        <task id="14" name="Project Phase 1" meeting="false" start="2015-11-18" duration="140" complete="0" expand="true">
-            <depend id="77" type="2" difference="0" hardness="Strong"/>
+        <task id="14" name="Project Phase 1" meeting="false" start="2015-11-18" duration="40" complete="0" expand="true">
             <task id="18" name="Programmatic analysis" color="#8cb6ce" meeting="false" start="2015-11-18" duration="20" complete="0" expand="true">
                 <depend id="19" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="19" name="Filtering + Spike detection" color="#8cb6ce" meeting="false" start="2015-12-16" duration="20" complete="0" expand="true">
                 <depend id="16" type="2" difference="0" hardness="Strong"/>
-                <depend id="27" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="16" name="Prototype 1st generation" color="#8cb6ce" meeting="true" start="2016-01-13" duration="0" complete="0" expand="true"/>
-            <task id="27" name="Clastering" color="#8cb6ce" meeting="false" start="2016-01-13" duration="60" complete="0" expand="true">
-                <depend id="30" type="2" difference="0" hardness="Strong"/>
-                <depend id="34" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="30" name="Prototype 2nd generation" color="#8cb6ce" meeting="true" start="2016-04-06" duration="0" complete="0" expand="true"/>
-            <task id="34" name="Casuality" color="#8cb6ce" meeting="false" start="2016-04-06" duration="40" complete="0" expand="true">
-                <depend id="43" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="43" name="Prototype 3rd generation" color="#8cb6ce" meeting="true" start="2016-06-01" duration="0" complete="0" expand="true"/>
         </task>
-        <task id="77" name="Results data analysis" color="#8cb6ce" meeting="false" start="2016-06-01" duration="20" complete="0" expand="true">
-            <depend id="72" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="72" name="Project Phase 2" meeting="false" start="2016-06-29" duration="70" complete="0" expand="true">
-            <depend id="96" type="2" difference="0" hardness="Strong"/>
-            <task id="73" name="Clastering" meeting="false" start="2016-06-29" duration="40" complete="0" expand="true">
-                <depend id="74" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="74" name="Casuality" color="#8cb6ce" meeting="false" start="2016-08-24" duration="30" complete="0" expand="true">
-                <depend id="88" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="88" name="Prototype 4th generation" color="#8cb6ce" meeting="true" start="2016-10-05" duration="0" complete="0" expand="true"/>
-        </task>
-        <task id="96" name="Results data analysis" meeting="false" start="2016-10-05" duration="63" complete="0" expand="true"/>
-        <task id="59" name="Conference" meeting="false" start="2016-01-11" duration="223" complete="0" expand="true">
-            <task id="60" name="Organization" color="#8cb6ce" meeting="false" start="2016-01-11" duration="180" complete="0" expand="true"/>
-            <task id="61" name="Online management" color="#8cb6ce" meeting="false" start="2016-01-11" duration="180" complete="0" expand="true"/>
-            <task id="65" name="Conference" color="#8cb6ce" meeting="false" start="2016-09-19" duration="3" complete="0" expand="true">
-                <depend id="67" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="67" name="Procedings publishing" color="#8cb6ce" meeting="false" start="2016-09-22" duration="40" complete="0" expand="true"/>
-        </task>
-        <task id="92" name="Publications" color="#8cb6ce" meeting="false" start="2015-12-01" duration="284" complete="0" expand="true"/>
+        <task id="92" name="Publications" color="#8cb6ce" meeting="false" start="2015-12-01" duration="32" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
