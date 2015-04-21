@@ -1,4 +1,5 @@
 import numpy as np
+import sklearn.decomposition as decomp
 
 
 def extract_waveforms(signal, peak_indices, samples_before, samples_after):
@@ -20,3 +21,15 @@ def extract_waveforms(signal, peak_indices, samples_before, samples_after):
             end = len(signal)
         waveforms[i] = signal[start:end]
     return waveforms
+
+
+def reduce_dimensions(waveforms, ndims, method, **kwargs):
+    if method == 'pca':
+        algorithm = decomp.PCA(n_components=ndims)
+    else:
+        raise Exception(
+            'Unknown dimensionality reduction method: '.format(method)
+        )
+    algorithm.set_params(**kwargs)
+    algorithm.fit(waveforms)
+    return algorithm.transform(waveforms)
