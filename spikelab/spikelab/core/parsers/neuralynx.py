@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def read_csc(filename):
+def csc(filename):
     """Read Neuralynx continuously sampled channel (CSC) recorded data.
     """
 
