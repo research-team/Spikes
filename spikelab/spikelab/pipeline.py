@@ -37,7 +37,7 @@ def full_pipeline(fromstage):
 
     if stagecode <= PIPELINE_STAGES['parse']:
         print('Parsing')
-        raw = neuralynx.csc(datafilename)
+        raw = neuralynx.csc(config['general']['raw_data_file'])
         _overwrite_dataset(channel, 'raw', raw)
     else:
         raw = channel['raw']
@@ -88,7 +88,7 @@ def full_pipeline(fromstage):
 
     if stagecode <= PIPELINE_STAGES['cluster']:
         print('Clustering')
-        units = sort.cluster(features)
+        units = sort.cluster(features, max_units=int(config['clustering']['max_units']), n_iterations=int(config['clustering']['n_iterations']), n_runs=int(config['clustering']['n_runs']))
         _overwrite_dataset(channel, 'units', units)
 
     print('Closing')
