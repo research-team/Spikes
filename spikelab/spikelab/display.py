@@ -41,6 +41,22 @@ def spikes(channel):
     plt.show()
 
 
+def marks(channel, begin, end, unit_index, show_original=False):
+    signal = channel['raw' if bool(show_original) else 'filtered']
+    plt.plot(signal[int(begin):int(end)], color='b')
+    peaks = channel['peaks']
+    units = channel['units']
+    times_in_range = peaks.value[np.where(units.value == int(unit_index))[0]]
+    plt.axhline(-channel.attrs['threshold'], color='r')
+    for t in times_in_range:
+        if t < int(begin):
+            continue
+        if t > int(end):
+            break
+        plt.axvline(t, color='g')
+    plt.show()
+
+
 def main():
     matplotlib.style.use('ggplot')
     config = configparser.ConfigParser()
