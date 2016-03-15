@@ -27,7 +27,7 @@ def main():
             'channels': channels,
             'graph': list(combinations(channels, 2)),
         }
-    with open(prb_file_name, 'w') as f:
+    with open(PRB_FILE_NAME, 'w') as f:
         f.write('channel_groups = \\\n')
         PrettyPrinter(stream=f).pprint(channel_groups)
 
