@@ -7,3 +7,4 @@ Joint project with neuroscience lab to process EEG data, to run filtering, clust
 * [Review of open-source neuroscience software](review-of-open-source-neuroscience-software.md)
 * [Software installation](software-installation.md)
 * [Software usage](software-usage.md)
+* [Neuralynx data file formats [PDF]](http://neuralynx.com/software/NeuralynxDataFileFormats.pdf)
