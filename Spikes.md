@@ -1,8 +1,8 @@
-#Spikes
+# Spikes
 
 Project to process data from neuroscience lab, to run filtering, clustering and get proper correlations of the neurons firing.
 
-##Description
+## Description
 
 ![Experiment](Spikes_description.jpg)
 
@@ -15,15 +15,15 @@ Third goal could be discovering negative feedback connection between neurons of 
 
 ![Connectome](Spikes_Connectome.jpg)
 
-##References
+## References
 
-###Clustering
+### Clustering
 
 1. http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3314330/?tool=pubmed
 1. http://www.nature.com/neuro/journal/v7/n5/full/nn1233.html
 1. http://jn.physiology.org/content/84/1/401
 
-###Viewers
+### Viewers
 
 - [OpenElectrophy](http://neuralensemble.org/OpenElectrophy/)
 - [SpykeViewer](http://neuralensemble.org/SpykeViewer/)
